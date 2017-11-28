@@ -4,10 +4,9 @@ var Park = function(){
     this.enclosure.push(dinosaur);
   };
   this.remove = function(type){
-    for (var i=0, i<this.enclosure.length; i++) {
+    for (var i=0, iLen=this.enclosure.length; i<iLen; i++) {
       if (this.enclosure[i].type == type){
-        this.enclosure.splice(i, 1);}
-
+        this.enclosure.splice(i, 1);}  
     }
   };
 
